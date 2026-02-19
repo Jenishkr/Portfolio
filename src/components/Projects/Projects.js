@@ -7,6 +7,7 @@ import Chat from "../../Assets/Projects/Chat.png";
 import Music from "../../Assets/Projects/Music.png";
 import Coin from "../../Assets/Projects/Coin.png";
 import Pet from "../../Assets/Projects/Pet.png";
+import Pocketpet from "../../Assets/Projects/Pocketpet.png";
 
 function Projects() {
   return (
@@ -20,6 +21,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Pocketpet}
+              isBlog={false}
+              title="Pocketpet"
+              description="A friendly virtual pet that appears on webpages to brighten your day and remind you to take care of yourself!
+                  A Chrome extension that brings adorable virtual pets to your browsing experience. Choose from 8 cute companions that pop up on webpages with wellness reminders, fun animations, and interactive features!"
+              ghLink="https://github.com/Jenishkr/Pocketpet"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Code}
